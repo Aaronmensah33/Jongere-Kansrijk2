@@ -13,7 +13,19 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Medewerkers') }}
+                    </x-nav-link>
+                    
+                    <x-nav-link :href="route('jongeren.index')" :active="request()->routeIs('jongeren.index')">
+                        {{ __('Jongeren') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('activiteiten.index')" :active="request()->routeIs('activiteiten.index')">
+                        {{ __('Activiteiten') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('instituten.index')" :active="request()->routeIs('instituten.index')">
+                        {{ __('Instituten') }}
                     </x-nav-link>
                 </div>
             </div>
